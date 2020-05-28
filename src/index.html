@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Degree</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="js/main.js"></script>
+</head>
+<body>
+	<header id="header">
+		<div class="header__background-img">
+			<div class="wrapper">
+				<div class="header__top">
+					<div class="header__top__logo">
+						<img src="img/Ellipse_1.png" alt="">
+						<h2 class="logo__name">Degree</h2>
+					</div>
+					<div class="header__top__right-blocks">
+						<div class="header__top__phone">
+							<img src="img/Layer_3.png" alt="">
+							<p class="header__top__phone__text">Есть вопросы? Звоните! <br><span class="header__top__phone__number">8 /800/ 259 09 36</span></p>
+						</div>
+
+						<!-- <nav>
+							<ul>
+								<li><a href="#">Главная</a></li>
+								<li><a href="#">Личный кабинет</a></li>
+								<li><a href="#">Портфолио</a></li>
+								<li><a href="#">Личный кабинет</a></li>
+								<li><a href="#">Обратная связь</a></li>
+							</ul>
+						</nav> -->
+
+
+						
+					</div>
+				</div>
+				<div class="header__main">
+					<h1>Услуги по 3D моделированию<br> <span>полный спектр услуг</span></h1>
+					<p class="header__main__special-offer">Оставьте заявку сейчас и получите дизайн интерьера 25кв2 бесплатно!*</p>
+					<form action="">
+						<input class="header__main__input-text" type="text" placeholder="Ваше имя">
+						<input class="header__main__input-text" type="text" placeholder="E-mail">
+						<input class="header__main__input-text" type="text" placeholder="Номер телефона">
+						<br>
+						<input class="header__main__input-buton" type="submit" value="Оставить заявку!">
+					</form>
+					<p class="header__main__privacy">*Мы гарантируем конфидициальность передаваемых данных</p>
+					<a id="mouse" href="#services"><img src="img/mouse.png" alt=""></a>
+				</div>
+			</div>
+		</div>
+		<!-- <div class="hamburger">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div> -->
+	</header>
+	<section id="services" class="services">
+		<h4>Наши услуги</h4>
+		<div class="blue-line"></div>
+		<div class="wrapper services__blocks">
+			<div class="services__blocks__block">
+				<h3>Дизайн интерьера</h3>
+				<p>Услуга, направленная на разработку интерьеров помещений с целью обеспечить удобство и эстетически приятное ощущение у человека при нахождении в помещении</p>
+			<a class="services__blocks__block__link" href="#">Оставить заявку</a>
+			</div>
+			<div class="services__blocks__img">
+				<img src="img/Layer_5.png" alt="">
+			</div>
+			<div class="services__blocks__img">
+				<img src="img/Layer_6.png" alt="">
+			</div>
+			<div class="services__blocks__block">
+				<h3>Дизайн экстерьера</h3>
+				<p>Услуга, направленная на разработку дизайна прилегающих элементов зданий, а также дизайн самих зданий, позволяющая обеспечить удобство людей при нахождении на территории</p>
+			</div>
+			<div class="services__blocks__block">
+				<h3>Визуализация</h3>
+				<p>Услуга, направленная на разработку дизайна прилегающих элементов зданий, а также дизайн самих зданий, позволяющая обеспечить удобство людей при нахождении на территории</p>
+			</div>
+			<div class="services__blocks__img">
+				<img src="img/Layer_7.png" alt="">
+			</div>
+		</div>
+	</section>
+	<section class="calculate-cost">
+		<h4><span>Расчитать стоимость</span></h4>
+		<div class="white-line"></div>
+		<p class="subtitle">Расчитайте предварительную стоимость разработки интерьера</p>
+		<div class="wrapper calculate-cost__main">
+			<div>
+				<div class="calculate-cost__main__left-content">
+					<p>Площадь помещения:</p>
+					<div class="calculate-cost__main__left-content__btn--text">
+						<button>100м²</button>
+						<button>ᅠᅠ10 000м²</button>
+						<button>ᅠ250 000м²</button>
+						<button>500 000м²</button>
+					</div>
+					<div class="calculate-cost__main__left-content__btn--point">
+						<button></button>
+						<button></button>
+						<button></button>
+						<button></button>
+
+					</div>
+					<div class="calculate-cost__main__left-content__line"></div>
+					
+				</div>
+				<div class="calculate-cost__main__left-content">
+					<p>Выберите пакет:</p>
+					<div class="calculate-cost__main__left-content__btn">
+						<button>Light</button>
+						<button>Medium</button>
+						<button>Full</button>
+					</div>
+				</div>
+			</div>
+			<div class="calculate-cost__main__right-content">
+				<p class="calculate-cost__main__right-content__caption">Площадь помещения:<br>
+					<span id="calculate-cost__square">1 000м²</span>
+				</p>
+				<p class="calculate-cost__main__right-content__caption">Средняя стоимость м²:<br>
+					<span id="calculate-cost__cost-m2">4 850 тг.</span>
+				</p>
+				<p class="calculate-cost__main__right-content__caption">Средняя стоимость объекта:<br>
+					<span id="calculate-cost__cost-object">48 500 тг.</span>
+				</p>
+				<a class="calculate-cost__main__right-content__link" href="#">Получить консультацию специалиста</a>
+				<p class="calculate-cost__main__right-content__contact">или позвоните нам по телефону:<span>+ 7 727 388 71 77</span></p>
+			</div>
+		</div>
+	</section>
+	<section class="portfolio">
+		<h4>Портфолио</h4>
+		<div class="blue-line"></div>
+		<div class="portfolio__button-list">
+			<button class="portfolio__button-list__button">все проекты</button>
+			<div class="blue-line--vertical"></div>
+			<button class="portfolio__button-list__button">экстерьеры</button>
+			<div class="blue-line--vertical"></div>
+			<button class="portfolio__button-list__button">жилые интерьеры</button>
+			<div class="blue-line--vertical"></div>
+			<button class="portfolio__button-list__button">общественные интерьеры</button>
+		</div>
+		<div class="wrapper portfolio__blocks">
+			<div class="portfolio__blocks__img">
+				<img src="img/Layer_11.png" alt="">
+			</div>
+			<div class="portfolio__blocks__img">
+				<img src="img/Layer_12.png" alt="">
+			</div>
+			<div class="portfolio__blocks__img">
+				<img src="img/Layer_13.png" alt="">
+			</div>
+			<div class="portfolio__blocks__img">
+				<img src="img/Layer_16.png" alt="">
+			</div>
+			<div class="portfolio__blocks__img">
+				<img src="img/Layer_15.png" alt="">
+			</div>
+			<div class="portfolio__blocks__img">
+				<img src="img/Layer_14.png" alt="">
+			</div>
+		</div>
+	</section>
+	<section class="advantages">
+		<h4>Почему мы лучшие?</h4>
+		<div class="blue-line"></div>
+		<div class="wrapper advantages__blocks">
+			<div class="advantages__blocks_block">
+				<img src="img/advantages1.png" alt="">
+				<div class="blue-line--short"></div>
+				<p>Профессиональные дизайнеры и визуализаторы с зарубежной практикой работы</p>
+			</div>
+			<div class="advantages__blocks_block">
+				<img src="img/advantages2.png" alt="">
+				<div class="blue-line--short"></div>
+				<p>Интеративный подход, работаем до полного согласования с Вами</p>
+			</div>
+			<div class="advantages__blocks_block">
+				<img src="img/advantages3.png" alt="">
+				<div class="blue-line--short"></div>
+				<p>Решаем вопрос закупки, берем авторский надзор на себя (пакет Full)</p>
+			</div>
+			<div class="advantages__blocks_block">
+				<img src="img/advantages4.png" alt="">
+				<div class="blue-line--short"></div>
+				<p>Над проектом работает группа специалистов под началом project менеджера в ERP системе</p>
+			</div>
+			<div class="advantages__blocks_block">
+				<img src="img/advantages5.png" alt="">
+				<div class="blue-line--short"></div>
+				<p>Выполнение раньше установленных сроков</p>
+			</div>
+			<div class="advantages__blocks_block">
+				<img src="img/advantages6.png" alt="">
+				<div class="blue-line--short"></div>
+				<p>Дарим альбом проекта, вместе с 25% скидкой на следующее обращение</p>
+			</div>
+		</div>
+	</section>
+	<section class="interaction-process">
+		<h4>Процесс взаимодействия</h4>
+		<div class="blue-line"></div>
+		<div class="wrapper interaction-process__blocks">
+			<div class="interaction-processs__blocks__img">
+				<img src="img/Layer_24.png" alt="">
+			</div>
+			<div class="interaction-process__blocks__block">
+				<p>Заполнение брифа</p>
+			</div>
+			<div class="interaction-process__blocks__block">
+				<p>Исследование</p>
+			</div>
+			<div class="interaction-processs__blocks__img">
+				<img src="img/Layer_25.png" alt="">
+			</div>
+			<div class="interaction-processs__blocks__img">
+				<img src="img/Layer_26.png" alt="">
+			</div>
+			<div class="interaction-process__blocks__block">
+				<p>Идея</p>
+			</div>
+			<div class="interaction-process__blocks__block">
+				<p>Завершение</p>
+			</div>
+			<div class="interaction-processs__blocks__img">
+				<img src="img/Layer_28.png" alt="">
+			</div>
+		</div>
+	</section>
+	<section class="trust">
+		<h4>Нам доверяют более 50 компаний</h4>
+		<div class="blue-line"></div>
+		<div class="wrapper">
+			<div class="trust__img">
+				<img src="img/trust/Layer_30.png" alt="">
+				<img src="img/trust/Layer_31.png" alt="">
+				<img src="img/trust/Layer_32.png" alt="">
+				<img src="img/trust/Layer_33.png" alt="">
+				<img src="img/trust/Layer_34.png" alt="">
+				<img src="img/trust/Layer_35.png" alt="">
+				<img src="img/trust/Layer_36.png" alt="">
+				<img src="img/trust/Layer_30.png" alt="">
+				<img src="img/trust/Layer_31.png" alt="">
+				<img src="img/trust/Layer_32.png" alt="">
+				<img src="img/trust/Layer_33.png" alt="">
+				<img src="img/trust/Layer_34.png" alt="">
+				<img src="img/trust/Layer_35.png" alt="">
+				<img src="img/trust/Layer_36.png" alt="">
+				<img src="img/trust/Layer_30.png" alt="">
+				<img src="img/trust/Layer_31.png" alt="">
+				<img src="img/trust/Layer_32.png" alt="">
+				<img src="img/trust/Layer_33.png" alt="">
+				<img src="img/trust/Layer_34.png" alt="">
+				<img src="img/trust/Layer_35.png" alt="">
+				<img src="img/trust/Layer_36.png" alt="">
+				<img src="img/trust/Layer_30.png" alt="">
+				<img src="img/trust/Layer_31.png" alt="">
+				<img src="img/trust/Layer_32.png" alt="">
+				<img src="img/trust/Layer_33.png" alt="">
+				<img src="img/trust/Layer_34.png" alt="">
+				<img src="img/trust/Layer_35.png" alt="">
+				<img src="img/trust/Layer_36.png" alt="">
+				<img src="img/trust/Layer_30.png" alt="">
+				<img src="img/trust/Layer_31.png" alt="">
+				<img src="img/trust/Layer_32.png" alt="">
+				<img src="img/trust/Layer_33.png" alt="">
+				<img src="img/trust/Layer_34.png" alt="">
+				<img src="img/trust/Layer_35.png" alt="">
+				<img src="img/trust/Layer_36.png" alt="">
+				<img src="img/trust/Layer_30.png" alt="">
+				<img src="img/trust/Layer_31.png" alt="">
+				<img src="img/trust/Layer_32.png" alt="">
+				<img src="img/trust/Layer_33.png" alt="">
+				<img src="img/trust/Layer_34.png" alt="">
+				<img src="img/trust/Layer_35.png" alt="">
+				<img src="img/trust/Layer_36.png" alt="">
+				<img src="img/trust/Layer_36.png" alt="">
+				<img src="img/trust/Layer_30.png" alt="">
+				<img src="img/trust/Layer_31.png" alt="">
+				<img src="img/trust/Layer_32.png" alt="">
+				<img src="img/trust/Layer_33.png" alt="">
+				<img src="img/trust/Layer_34.png" alt="">
+				<img src="img/trust/Layer_35.png" alt="">
+				<img src="img/trust/Layer_36.png" alt="">
+			</div>
+			<div class="trust__scroll">
+			</div>
+			<div class="trust__scroll__cursor">
+				<div class="trust__scroll__cursor__point"></div>
+				<div class="trust__scroll__cursor__point"></div>
+				<div class="trust__scroll__cursor__point"></div>
+				<div class="trust__scroll__cursor__point"></div>
+				<div class="trust__scroll__cursor__point"></div>
+				<div class="trust__scroll__cursor__point"></div>
+				<div class="trust__scroll__cursor__point"></div>
+				<div class="trust__scroll__cursor__point"></div>
+				<div class="trust__scroll__cursor__point"></div>
+				<div class="trust__scroll__cursor__point"></div>
+				<div class="trust__scroll__cursor__point"></div>
+				<div class="trust__scroll__cursor__point"></div>
+			</div>
+		</div>
+	</section>
+	<section class="wrapper our-team">
+		<h4>Наша команда</h4>
+		<div class="blue-line"></div>
+		<div class=" our-team__blocks">
+			<div class="our-team__blocks__block">
+				<img src="img/Layer_40.png" alt="">
+				<p>Ирина Притыкина<br><span>Директор компании</span></p>
+			</div>
+			<div class="our-team__blocks__block">
+				<img src="img/Layer_42.png" alt="">
+				<p>Игорь Карий<br><span>Финансовый директор</span></p>
+			</div>
+			<div class="our-team__blocks__block">
+				<img src="img/Layer_43.png" alt="">
+				<p>Илья Кондрашин<br><span>Инженер модельер</span></p>
+			</div>
+		</div>
+		<div class="our-team__blocks">
+			<div class="our-team__blocks__block">
+				<img src="img/Layer_41.png" alt="">
+				<p>Маргарита Гордеева<br><span>3D дизайнер</span></p>
+			</div>
+			<div class="our-team__blocks__block">
+				<img src="img/Layer_38.png" alt="">
+				<p>Светлана Коток<br><span>Дизайнер интерьеров</span></p>
+			</div>
+			<div class="our-team__blocks__block">
+				<img src="img/Layer_44.png" alt="">
+				<p>Максим Ковальский<br><span>Дизайнер ландшафтов</span></p>
+			</div>
+		</div>
+		<div class="our-team__quote">
+			<img src="img/Layer_37.png" alt="">
+			<p><span class="our-team__quote__headline">Ты - то, что ты делаешь!</span><span class="our-team__quote__text">То, что мы делаем, определяет то, кем мы являемся. Люди чувствуют старание и чувствуют неаккуратность. Это связано с уважением друг к другу, так что небрежность - это неуважение к самому себе.</span><span class="our-team__quote__writer"><strong>Ислам Куаныш</strong></span><span class="our-team__quote__position">Директор</span></p>
+			<img src="img/Layer_8_copy.png" alt="">
+		</div>
+	</section>
+	<section class="blog">
+		<h4>Блог</h4>
+		<div class="blue-line"></div>
+		<div class="wrapper blog__blocks">
+			<div class="blog__blocks__block">
+				<img src="img/Layer_45.png" alt="">
+				<a href="#">Минимализм – это самый простой, практичный и «спорный»<br> стиль в дизайне интерьеров</a>
+			</div>
+			<div class="blog__blocks__block">
+				<img src="img/Layer_46.png" alt="">
+				<a href="#">Прованс - это спокойный южный регион Франции, с<br> великолепнейшей природой</a>
+			</div>
+		</div>
+	</section>
+	<section class="feedback">
+			<div class="wrapper">
+				<h4><span>Остались вопросы?</span></h4>
+				<div class="white-line"></div>
+				<p class="subtitle">Задайте их в форме ниже и наши специалисты свяжуться с Вами!</p>
+				<div class="feedback__main">
+					<div class="feedback__main__left-content">
+						<form action="">
+							<input class="feedback__main__left-content__input-text" type="text" placeholder="Ваше имя">
+							<input class="feedback__main__left-content__input-text" type="text" placeholder="Ваш e-mail">
+							<input class="feedback__main__left-content__input-text" type="text" placeholder="Ваш номер телефона">
+							<textarea class="feedback__main__left-content__input-text--area" placeholder="Ваше сообщение" name="" id="" cols="3" rows="1"></textarea>
+							<input class="feedback__main__left-content__input-buton" type="submit" value="Оставить заявку!">
+						</form>
+					</div>
+					<div class="feedback__main__right-content">
+						<div class="feedback__main__right-content__block">
+							<img src="img/Layer_48.png" alt="">
+							<p>+ 7 896 876 66 77</p>
+						</div>
+						<div class="feedback__main__right-content__block">
+							<img src="img/Layer-49.png" alt="">
+							<p>+ 7 896 876 66 77</p>
+						</div>
+						<div class="feedback__main__right-content__block">
+							<img src="img/Layer_49.png" alt="">
+							<p>sales@23degree.kz</p>
+						</div>
+						<div class="feedback__main__right-content__block">
+							<img src="img/Layer_51.png" alt="">
+							<p>skype: 23degree</p>
+						</div>
+						<div class="feedback__main__right-content__block">
+							<img src="img/Layer_53.png" alt="">
+							<p>telegram: 23degree</p>
+						</div>
+						<p>График работы: с 9-00 до 18-00. Пн.-Пт.</p>
+					</div>
+				</div>
+			</div>
+	</section>
+	<section class="map">
+		<div class="map__background-img">
+		</div>
+	</section>
+	<section class="footer--background">
+		<div class="footer wrapper">
+			<div class="footer__nav">
+				<div class="footer__nav__col">
+					<a href="#header">Главная</a>
+					<a href="#">Тарифы</a>
+				</div>
+				<div class="footer__nav__col">
+					<a href="#">Вопросы-ответы</a>
+					<a href="#">Личный кабинет</a>
+				</div>
+				<div class="footer__nav__col">
+					<a href="#">Новости</a>
+					<a href="#">Договор публичной оферты</a>
+				</div>
+			</div>
+			<div class="footer__socials">
+				<p>Мы в социальных сетях:</p>
+				<a href="https:/facebook.com"><img src="img/Layer_59.png" alt=""></a>
+				<a href="https:/myaccount.google.com"><img src="img/Layer_58.png" alt=""></a>
+				<a href="https:/instagram.com"><img src="img/Layer_60.png" alt=""></a>
+			</div>
+			<div class="footer__line"></div>
+			<div class="footer__copyright">
+				<p>© Kazteleport, 2015. Все права защищены</p>
+			</div>
+			<div class="footer__promo">
+				<p>Создание сайта - </p>
+				<img src="img/Layer_56.png" alt="">
+			</div>
+		</div>
+	</section>
+</body>
+</html>
